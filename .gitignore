@@ -1,0 +1,32 @@
+# Python 缓存文件
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# 虚拟环境
+venv/
+env/
+.env/
+*.env
+
+# 数据集与大文件（禁止上传）
+datasets/
+*.csv
+*.parquet
+*.json
+*.jpg
+*.png
+*.db
+*.sqlite
+
+# IDE 本地配置
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 系统缓存文件
+.DS_Store
+Thumbs.db
