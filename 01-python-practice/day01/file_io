@@ -1,0 +1,26 @@
+# 1. 写入文件
+content = """Hello Python
+This is day1 practice
+We are learning data engineering
+"""
+
+# 'w' 模式：写入（会覆盖原有内容）
+with open("day01_sample.txt", "w", encoding="utf-8") as f:
+    f.write(content)
+
+print("文件写入完成")
+
+# 2. 读取整个文件
+with open("day01_sample.txt", "r", encoding="utf-8") as f:
+    text = f.read()
+    print("\n完整文件内容:")
+    print(text)
+
+# 3. 按行读取并处理
+with open("day01_sample.txt", "r", encoding="utf-8") as f:
+    lines = f.readlines()
+    print("按行处理:")
+    for line in lines:
+        clean_line = line.strip()  # 去掉换行符和首尾空格
+        if clean_line:  # 跳过空行
+            print(f"- {clean_line.upper()}")

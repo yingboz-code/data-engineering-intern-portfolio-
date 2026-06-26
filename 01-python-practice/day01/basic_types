@@ -1,0 +1,25 @@
+name = "Data Engineer"
+
+age = 19 
+score = 92.5 
+is_valid = True 
+
+raw_text = "Hello, World"
+print ("原文本：", raw_text)
+print ("去首尾空格：", raw_text.strip())
+print ("转小写：", raw_text.lower())
+print("转大写：", raw_text.upper())
+print("替换字符：", raw_text.replace("World", "Python"))
+
+
+# 3. 字符串切片
+text = "abcdefg"
+print("前3个字符:", text[:3])
+print("从第2个到最后:", text[2:])
+
+
+#4. 类型转化
+
+num_str = "123"
+num_int = int(num_str)
+print("字符串转数字:", num_int, type(num_int))

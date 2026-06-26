@@ -1,0 +1,39 @@
+# 1. 列表操作
+scores = [85, 92, 78, 90, 88]
+print("原始列表:", scores)
+
+# 增
+scores.append(95)
+print("追加元素:", scores)
+
+# 删
+scores.pop(2)  # 删除索引为2的元素
+print("删除第3个元素:", scores)
+
+# 查
+print("第1个元素:", scores[0])
+print("列表长度:", len(scores))
+print("最大值:", max(scores))
+print("平均值:", sum(scores) / len(scores))
+
+# 切片
+print("前3个元素:", scores[:3])
+
+# 2. 字典操作（键值对，存储结构化数据）
+student = {
+    "name": "Tom",
+    "age": 21,
+    "major": "Data Science",
+    "score": 92
+}
+
+print("学生姓名:", student["name"])
+print("安全取值:", student.get("gender", "未知"))  # 键不存在时返回默认值，不报错
+
+# 修改值
+student["score"] = 95
+print("更新后分数:", student["score"])
+
+# 遍历字典
+for key, value in student.items():
+    print(f"{key}: {value}")
